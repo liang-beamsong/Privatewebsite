@@ -12,6 +12,25 @@
 */
 
 Route::get('/', function () {
-    return redirect('/home');
+    return redirect('home');
 });
-Route::get('/home','Home\IndexController@index');
+
+Route::get('home','Home\IndexController@index');
+Route::get('about','Home\IndexController@index');
+Route::get('typography','Home\IndexController@index');
+Route::get('gallery','Home\IndexController@index');
+Route::get('contact','Home\IndexController@index');
+
+/**
+ * 后台路由组
+ */
+Route::group(['middleware'=>'adminlogin'], function(){
+
+});
+
+/**
+ * 前台路由组
+ */
+Route::group(['middleware'=>'homelogin'], function(){
+
+});

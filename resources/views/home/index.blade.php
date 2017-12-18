@@ -40,11 +40,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
-								<li><a href="index.html"><span data-hover="Home">Home</span></a></li>
-								<li><a href="about.html"><span data-hover="About">关于</span></a></li>
-								<li><a href="typography.html"><span data-hover="Shortcodes">Shortcodes</span></a></li>
-								<li><a href="gallery.html"><span data-hover="Gallery">Gallery</span></a></li>
-								<li><a href="contact.html"><span data-hover="Contact">Contact</span></a></li>
+								<li><a href="home"><span data-hover="Home">Home</span></a></li>
+								<li><a href="about"><span data-hover="About">关于</span></a></li>
+								<li><a href="typography"><span data-hover="Shortcodes">Shortcodes</span></a></li>
+								<li><a href="gallery"><span data-hover="Gallery">Gallery</span></a></li>
+								<li><a href="contact"><span data-hover="Contact">Contact</span></a></li>
 							</ul>
 							<div class="clearfix"></div>
 						</div><!-- /.navbar-collapse -->
