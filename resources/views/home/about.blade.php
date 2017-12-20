@@ -9,18 +9,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--flexslider-css-->
 <!--bootstrap-->
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="homes/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <!--coustom css-->
-<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="homes/css/style.css" rel="stylesheet" type="text/css"/>
 <!--fonts-->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,800italic,800,700italic,700,600,600italic' rel='stylesheet' type='text/css'>
 <!--/fonts-->
 <!--script-->
-<script src="js/jquery.min.js"> </script>
+<script src="homes/js/jquery.min.js"> </script>
 	<!-- js -->
-		 <script src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+		 <script src="homes/js/bootstrap.js"></script>
+		<script type="text/javascript" src="homes/js/move-top.js"></script>
+<script type="text/javascript" src="homes/js/easing.js"></script>
 <!--/script-->
 <script type="text/javascript">
 			jQuery(document).ready(function($) {
@@ -31,38 +31,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 </script>
 <!--/script-->
-<link rel="stylesheet" type="text/css" href="css/common.css" />
-<link rel="stylesheet" type="text/css" href="css/style4.css" />
+<link rel="stylesheet" type="text/css" href="homes/css/common.css" />
+<link rel="stylesheet" type="text/css" href="homes/css/style4.css" />
 	</head>
 	<body>
 		<div class="header" id="home">
-			<nav class="navbar navbar-default">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html"><h1>Stunning</h1><br /><span>Traveling</span></a>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
-								<li><a href="index.html"><span data-hover="Home">Home</span></a></li>
-								<li><a href="about.html"><span data-hover="About">About</span></a></li>
-								<li><a href="typography.html"><span data-hover="Shortcodes">Shortcodes</span></a></li>
-								<li><a href="gallery.html"><span data-hover="Gallery">Gallery</span></a></li>
-								<li><a href="contact.html"><span data-hover="Contact">Contact</span></a></li>
-							</ul>
-							<div class="clearfix"></div>
-						</div><!-- /.navbar-collapse -->
-						<div class="clearfix"></div>
-				</div><!-- /.container-fluid -->
-			</nav>
-			
+			@include('layout.header')
 			<div class="header-banner">
 					<!-- Top Navigation -->
 					<section class="bgi banner5"><h2>About</h2> </section>
@@ -75,17 +49,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam et dignissim augue, et sagittis turpis. Vestibulum congue turpis ac tincidunt accumsan. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orc i ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. </p>
 				<div class="about-bottom">
 					<div class="col-md-4 about-left">
-						<img src="images/w32.jpg" alt="" />
+						<img src="homes/images/w32.jpg" alt="" />
 						<h5>What We Do</h5>
 						<p>Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Vestibulum congue turpis ac tincidunt accumsan.</p>
 					</div>
 					<div class="col-md-4 about-left">
-						<img src="images/we.jpg" alt="" />
+						<img src="homes/images/we.jpg" alt="" />
 						<h5>Our Standards</h5>
 						<p>Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Vestibulum congue turpis ac tincidunt accumsan.</p>
 					</div>
 					<div class="col-md-4 about-left">
-						<img src="images/we1.jpg" alt="" />
+						<img src="homes/images/we1.jpg" alt="" />
 						<h5>Our Capabilities</h5>
 						<p>Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Vestibulum congue turpis ac tincidunt accumsan.</p>
 					</div>
@@ -206,52 +180,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 </div>
 <!--footer-starts-->
-	<div class="footer">
-		<div class="container">
-			<div class="footer-main">
-				<div class="col-md-3 footet-left">
-					<h3>INFORMATION</h3>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="typography.html">Shortcodes</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footet-left">
-					<h3>CATEGORIES</h3>
-					<ul>
-						<li><a href="#">Travlio</a></li>
-						<li><a href="#">Whizz</a></li>
-						<li><a href="#">Sayohat</a></li>
-						<li><a href="#">Turistik</a></li>
-						<li><a href="#">Excursion </a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footet-left">
-					<h3>MY ACCOUNT</h3>
-					<ul>
-						<li><a href="#">My account</a></li>
-						<li><a href="#">My addresses</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footet-left">
-					<h3>NEWSLETTER</h3>
-					<div class="sub-text">
-						<input type="text" value="Enter Your Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter Your Email';}"/>
-						<input type="submit" value="" >
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="copy-rights">
-				<p>Copyright &copy; 2015.Company name All rights reserved.</p>
-			</div>
-		</div>
-<!---->
-</div>
-			<!---->
+@include('layout.footer')
 <script type="text/javascript">
 		$(document).ready(function() {
 				/*

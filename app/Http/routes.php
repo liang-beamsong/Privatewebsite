@@ -16,10 +16,10 @@ Route::get('/', function () {
 });
 
 Route::get('home','Home\IndexController@index');
-Route::get('about','Home\IndexController@index');
-Route::get('typography','Home\IndexController@index');
-Route::get('gallery','Home\IndexController@index');
-Route::get('contact','Home\IndexController@index');
+Route::get('about','Home\AboutController@index');
+Route::get('tech','Home\TechController@index');
+Route::get('shop','Home\ShopController@index');
+Route::get('forum','Home\ForumController@index');
 
 /**
  * 后台路由组

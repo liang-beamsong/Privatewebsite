@@ -25,32 +25,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</head>
 	<body>
 		<div class="header" id="home">
-			<nav class="navbar navbar-default">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html"><h1>Stunning</h1><br /><span>Traveling</span></a>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
-								<li><a href="home"><span data-hover="Home">Home</span></a></li>
-								<li><a href="about"><span data-hover="About">关于</span></a></li>
-								<li><a href="typography"><span data-hover="Shortcodes">Shortcodes</span></a></li>
-								<li><a href="gallery"><span data-hover="Gallery">Gallery</span></a></li>
-								<li><a href="contact"><span data-hover="Contact">Contact</span></a></li>
-							</ul>
-							<div class="clearfix"></div>
-						</div><!-- /.navbar-collapse -->
-						<div class="clearfix"></div>
-				</div><!-- /container-fluid -->
-			</nav>
+			@include('layout.header')
 			<div class="header-banner">
 					<!-- Top Navigation -->
 					<div class="container page-seperator">
@@ -269,52 +244,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 
 <!--footer-starts-->
-	<div class="footer">
-		<div class="container">
-			<div class="footer-main">
-				<div class="col-md-3 footet-left">
-					<h3>INFORMATION</h3>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="typography.html">Shortcodes</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footet-left">
-					<h3>CATEGORIES</h3>
-					<ul>
-						<li><a href="#">Travlio</a></li>
-						<li><a href="#">Whizz</a></li>
-						<li><a href="#">Sayohat</a></li>
-						<li><a href="#">Turistik</a></li>
-						<li><a href="#">Excursion </a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footet-left">
-					<h3>MY ACCOUNT</h3>
-					<ul>
-						<li><a href="#">My account</a></li>
-						<li><a href="#">My addresses</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footet-left">
-					<h3>NEWSLETTER</h3>
-					<div class="sub-text">
-						<input type="text" value="Enter Your Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter Your Email';}"/>
-						<input type="submit" value="" >
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="copy-rights">
-				<p>Copyright &copy; 2015.Company name All rights reserved.</p>
-			</div>
-		</div>
-<!---->
-</div>
-			<!---->
+@include('layout.footer')
 <script type="text/javascript">
 		$(document).ready(function() {
 				/*
