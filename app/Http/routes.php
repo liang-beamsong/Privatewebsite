@@ -11,21 +11,28 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect('home');
-});
+// Route::get('/', function () {
+//     return redirect('home');
+// });
 
-Route::get('home','Home\IndexController@index');
-Route::get('about','Home\AboutController@index');
-Route::get('tech','Home\TechController@index');
-Route::get('shop','Home\ShopController@index');
-Route::get('forum','Home\ForumController@index');
+// Route::get('home','Home\IndexController@index');
+// Route::get('about','Home\AboutController@index');
+// Route::get('tech','Home\TechController@index');
+// Route::get('shop','Home\ShopController@index');
+// Route::get('forum','Home\ForumController@index');
+
+/**
+ * 登录
+ */
+// Route::get('home/login','Home\LoginController@index');
+Route::get('admin/login','Admin\LoginController@index');
 
 /**
  * 后台路由组
  */
 Route::group(['middleware'=>'adminlogin'], function(){
-
+	//后台首页
+	Route::get('admin','Admin\IndexController@index');
 });
 
 /**
