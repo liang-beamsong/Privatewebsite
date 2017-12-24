@@ -22,31 +22,27 @@ class AdminLoginMiddleware
          * 判断是否存在session 
          */
         if(session('uid')){
+
             return $next($request);
-        }else if(isset($_COOKIE['usercookie'])){ // 此处检测第二次登录时有没有cookie
-            //获取已经写入的cookie
-            $secret = $_COOKIE['usercookie'];
-            //解密cookie
+
+        }else if(isset($_COOKIE['userinfo'])){ 
+
+            $secret = $_COOKIE['userinfo'];
+
             $decrypt = Crypt::decrypt($secret);
-            // dd($decrypt);
-            $res  =explode('@@',$decrypt);
-            //准备数据 写入session
-            $username = $res['0'];
-            $password = $res['1'];
-            //读取当前登录用户的信息
-            $info = DB::table('user')->where('username',$username)->first();
+
+            $res  =explode(',',$decrypt);
+
+            $info = DB::table('cp_user')->where('username',$res['0'])->first();
 
             //写入session
-            session(['username'=>$username]);
-            session(['password'=>$password]);
-
-            //写入session的id
-            session(['uid'=>$info->id]);
+            session(['uid'=>$info->id,'username'=>$info->username]);
 
             return $next($request);
         }else{
-            //此处为第一次登录没有session和cookie的跳转
-            return redirect('admin/login');
+
+            return redirect('/admin/login');
+            
         }
 
     }
