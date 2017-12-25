@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SpaceLab</title>
+    <title>login</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Favicon -->
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/admins/assets/css/animate.css">
     <!-- Custom styles for this theme -->
     <link rel="stylesheet" href="/admins/assets/css/main.css">
+    <link rel="stylesheet" href="/general/css/message.css">
     <!-- Fonts -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
@@ -84,33 +85,10 @@
     <script src="/admins/assets/plugins/nanoScroller/jquery.nanoscroller.min.js"></script>
     <script src="/admins/assets/js/application.js"></script>
     <script src="/admins/assets/js/base64.js"></script>
+    <script src="/general/js/message.js"></script>
+    <script src="/general/js/messageIE.js"></script>
     <script type="text/javascript">
-        function login(){
-            $('#nameerror').hide();
-            $('#passerror').hide();
-            var username=$('#email').val();
-            var password=$('#password').val();
-            if(!username){
-                $('#nameerror').html('用户名不能为空!').show();
-            }else if(!password){
-                $('#passerror').html('密码不能为空!').show();
-            }else{
-                var b = new Base64();
-                $.post('/admin/login', {'username':username,'password':b.encode(password)}, function(data){
-                    var data = JSON.parse(data);
-                    if(data.status == '404'){
-                        $('#nameerror').html(data.info).show();
-                    }else if(data.status == '400'){
-                        $('#passerror').html(data.info).show();
-                    }else if(data.status == '500'){
-                        alert(data.info);
-                    }else{
-                        location.href='/admin';
-                    }
-                });
-            }
-            
-        }
+       function login(){ $('#nameerror').hide(); $('#passerror').hide(); var username=$('#email').val(); var password=$('#password').val(); if(!username){ $('#nameerror').html('用户名不能为空!').show(); }else if(!password){ $('#passerror').html('密码不能为空!').show(); }else{ var b = new Base64(); $.post('/admin/login', {'username':username,'password':b.encode(password)}, function(data){ var data = JSON.parse(data); if(data.status == '404'){ $('#nameerror').html(data.info).show(); }else if(data.status == '400'){ $('#passerror').html(data.info).show(); }else if(data.status == '500'){ $.message({ message:data.info, time:'5000', type:'error' }); }else{ location.href='/admin'; } }); } } document.onkeydown=function(event){ var e = event || window.event || arguments.callee.caller.arguments[0]; if(e && e.keyCode==13) { login(); } };
     </script>
 </body>
 
