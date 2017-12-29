@@ -26,7 +26,7 @@ class LoginController extends Controller
     public function login(Request $Request)
     {
     	$data=$Request->only(['username','password']);
-    	$info=DB::table('cp_user')->where('username',$data['username'])->first();
+    	$info=DB::table('sc_user')->where('username',$data['username'])->first();
     	if(empty($info)){
     		exit(json_encode(['status'=>404,'info'=>'管理员不存在请重新输入!']));
     	}
@@ -46,7 +46,7 @@ class LoginController extends Controller
 
     		$cookies=Crypt::encrypt(implode(',',$data));
     		setcookie('userinfo',$cookies,time()+3600,'/');
-            
+
     		exit(json_encode(['status'=>200,'info'=>'成功']));
     	}else{
     		exit(json_encode(['status'=>400,'info'=>'密码错误请重新输入!']));

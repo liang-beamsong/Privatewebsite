@@ -33,7 +33,7 @@ class AdminLoginMiddleware
 
             $res  =explode(',',$decrypt);
 
-            $info = DB::table('cp_user')->where('username',$res['0'])->first();
+            $info = DB::table('sc_user')->where('username',$res['0'])->first();
 
             //写入session
             session(['uid'=>$info->id,'username'=>$info->username]);
