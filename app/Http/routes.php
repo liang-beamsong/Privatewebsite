@@ -15,18 +15,14 @@ Route::get('/', function () {
     return redirect('home');
 });
 
-Route::get('home','Home\IndexController@index');
-Route::get('about','Home\AboutController@index');
-Route::get('tech','Home\TechController@index');
-Route::get('shop','Home\ShopController@index');
-Route::get('forum','Home\ForumController@index');
-
 /**
  * 后台路由组
  */
 Route::group(['middleware'=>'adminlogin'], function(){
 	//后台首页
 	Route::get('admin','Admin\IndexController@index');
+	// Route::controlle('user','UserController');
+	// Route::controlle('article','ArticleController');
 });
 
 /**
@@ -42,3 +38,12 @@ Route::post('admin/login','Admin\LoginController@login');
 Route::group(['middleware'=>'homelogin'], function(){
 
 });
+
+/**
+ * 前台栏目
+ */
+Route::get('home','Home\IndexController@index');
+Route::get('about','Home\AboutController@index');
+Route::get('tech','Home\TechController@index');
+Route::get('shop','Home\ShopController@index');
+Route::get('forum','Home\ForumController@index');

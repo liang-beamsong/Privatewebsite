@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="admins/assets/plugins/todo/css/todos.css">
     <!-- Morris  -->
     <link rel="stylesheet" href="admins/assets/plugins/morris/css/morris.css">
+     @yield('link')
     <!-- Fonts -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
@@ -138,9 +139,7 @@
                         <img src="admins/assets/img/avatar.png" alt="" class="img-circle">
                     </li>
                     <li class="dropdown settings">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                      Mike Adams <i class="fa fa-angle-down"></i>
-                    </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hello {{session('username')}}<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu animated fadeInDown">
                             <li>
                                 <a href="#"><i class="fa fa-user"></i> 个人信息</a>
@@ -184,9 +183,9 @@
                     <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-bar-chart-o"></i><span>用户管理</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
-                            <li><a href="charts-chartjs.html">前台用户列表</a>
+                            <li><a href="user/front">用户列表</a>
                             </li>
-                            <li><a href="charts-morris.html">后台用户列表</a>
+                            <li><a href="user/back">管理员列表</a>
                             </li>
                         </ul>
                     </li>
@@ -238,28 +237,6 @@
                             <li><a href="mail-inbox.html">添加优惠劵</a>
                             </li>
                             <li><a href="mail-compose.html">优惠券列表</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="typography.html"><i class="fa fa-text-height"></i><span>Typography</span></a>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:void(0);"><i class="fa fa-file"></i><span>Pages</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                        <ul>
-                            <li><a href="pages-blank.html">Blank Page</a>
-                            </li>
-                            <li><a href="pages-login.html">Login</a>
-                            </li>
-                            <li><a href="pages-sign-up.html">Sign Up</a>
-                            </li>
-                            <li><a href="pages-calendar.html">Calendar</a>
-                            </li>
-                            <li><a href="pages-timeline.html">Timeline</a>
-                            </li>
-                            <li><a href="pages-404.html">404</a>
-                            </li>
-                            <li><a href="pages-500.html">500</a>
                             </li>
                         </ul>
                     </li>
