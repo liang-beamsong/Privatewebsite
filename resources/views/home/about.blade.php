@@ -9,18 +9,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--flexslider-css-->
 <!--bootstrap-->
-<link href="homes/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/homes/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <!--coustom css-->
-<link href="homes/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="/homes/css/style.css" rel="stylesheet" type="text/css"/>
 <!--fonts-->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,800italic,800,700italic,700,600,600italic' rel='stylesheet' type='text/css'>
 <!--/fonts-->
 <!--script-->
-<script src="homes/js/jquery.min.js"> </script>
+<script src="/homes/js/jquery.min.js"> </script>
 	<!-- js -->
-		 <script src="homes/js/bootstrap.js"></script>
-		<script type="text/javascript" src="homes/js/move-top.js"></script>
-<script type="text/javascript" src="homes/js/easing.js"></script>
+		 <script src="/homes/js/bootstrap.js"></script>
+		<script type="text/javascript" src="/homes/js/move-top.js"></script>
+<script type="text/javascript" src="/homes/js/easing.js"></script>
 <!--/script-->
 <script type="text/javascript">
 			jQuery(document).ready(function($) {
@@ -31,8 +31,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 </script>
 <!--/script-->
-<link rel="stylesheet" type="text/css" href="homes/css/common.css" />
-<link rel="stylesheet" type="text/css" href="homes/css/style4.css" />
+<link rel="stylesheet" type="text/css" href="/homes/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/homes/css/style4.css" />
 	</head>
 	<body>
 		<div class="header" id="home">
@@ -49,17 +49,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam et dignissim augue, et sagittis turpis. Vestibulum congue turpis ac tincidunt accumsan. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orc i ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. </p>
 				<div class="about-bottom">
 					<div class="col-md-4 about-left">
-						<img src="homes/images/w32.jpg" alt="" />
+						<img src="/homes/images/w32.jpg" alt="" />
 						<h5>What We Do</h5>
 						<p>Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Vestibulum congue turpis ac tincidunt accumsan.</p>
 					</div>
 					<div class="col-md-4 about-left">
-						<img src="homes/images/we.jpg" alt="" />
+						<img src="/homes/images/we.jpg" alt="" />
 						<h5>Our Standards</h5>
 						<p>Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Vestibulum congue turpis ac tincidunt accumsan.</p>
 					</div>
 					<div class="col-md-4 about-left">
-						<img src="homes/images/we1.jpg" alt="" />
+						<img src="/homes/images/we1.jpg" alt="" />
 						<h5>Our Capabilities</h5>
 						<p>Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Vestibulum congue turpis ac tincidunt accumsan.</p>
 					</div>

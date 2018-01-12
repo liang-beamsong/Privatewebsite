@@ -23,6 +23,9 @@ class LoginController extends Controller
     	}
     }
 
+    /**
+     * 后台登录
+     */
     public function login(Request $Request)
     {
     	$data=$Request->only(['username','password']);
@@ -51,5 +54,20 @@ class LoginController extends Controller
     	}else{
     		exit(json_encode(['status'=>400,'info'=>'密码错误请重新输入!']));
     	}
+    }
+
+    /**
+     * 用户退出
+     */
+    public function logout(Request $request)
+    {
+        // 清除session
+        $request->session()->forget('uid');
+        $request->session()->forget('username');
+
+        // 清除cookie
+        setcookie('userinfo', '', -1, '/');
+        
+        return redirect('admin/login');
     }
 }

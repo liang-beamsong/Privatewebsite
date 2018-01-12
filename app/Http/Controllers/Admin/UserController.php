@@ -9,12 +9,12 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
-    public function front()
+    public function getFront()
     {
     	return view('admin.user.front');
     }
 
-    public function back()
+    public function getBack()
     {
     	return view('admin.user.back');
     }

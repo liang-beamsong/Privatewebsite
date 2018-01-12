@@ -21,8 +21,15 @@ Route::get('/', function () {
 Route::group(['middleware'=>'adminlogin'], function(){
 	//后台首页
 	Route::get('admin','Admin\IndexController@index');
-	// Route::controlle('user','UserController');
-	// Route::controlle('article','ArticleController');
+	Route::get('logout','Admin\LoginController@logout');
+
+	/**
+	 * 后台一级导航路由
+	 */
+	Route::controller('user','Admin\UserController');
+	Route::controller('article','Admin\ArticleController');
+
+	
 });
 
 /**
